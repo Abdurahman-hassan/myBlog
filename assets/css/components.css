@@ -1,0 +1,221 @@
+/* Button Styles */
+button, .read-more {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, .read-more:hover {
+    background-color: #0056b3;
+}
+
+.more-space {
+    margin-bottom: 20px;
+}
+/* Post Card Styling */
+.post-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+    background-color: #fff;
+}
+
+.post-image {
+    width: 66%;
+    height: auto;
+}
+.post-image-outer {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 1rem;
+}
+
+.post-content h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-content h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Author Info Styles */
+.author-info {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+/* Social Sharing Styles */
+.social-sharing {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    color: #fff;
+}
+
+.contact-form-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* About Page Layout */
+.about-page {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+}
+
+/* About Section - Align the Header Above the Text */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Text and Heading */
+.about h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* About Photo - Image Stays to the Side */
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove list styles from related articles */
+.related-articles ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.related-articles li {
+    margin-bottom: 10px;
+}
+
+/* Ensure links are styled appropriately */
+.related-articles a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.related-articles a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure Responsiveness */
+@media (max-width: 768px) {
+    .about-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo img {
+        width: 150px;
+    }
+}
+
