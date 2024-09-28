@@ -71,12 +71,14 @@ footer {
     border-radius: 8px;
 }
 
+
 /* Main Page Layout */
-.index-page {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
+/*i use grid insted of flex*/
+/*.index-page {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    gap: 20px;*/
+/*}*/
 
 .main-content {
     flex: 3;
@@ -98,6 +100,25 @@ footer {
 section {
     margin-bottom: 40px;
 }
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.index-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .index-page {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
