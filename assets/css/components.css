@@ -213,6 +213,17 @@ button:focus, .read-more:focus {
     text-decoration: underline;
 }
 
+button, .read-more {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+
 /* Ensure Responsiveness */
 @media (max-width: 768px) {
     .about-page {
