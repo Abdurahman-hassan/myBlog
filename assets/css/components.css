@@ -1,6 +1,6 @@
 /* Button and Link Styles with Improved Contrast */
 button, .read-more {
-    background-color: #0056b3; /* Darker blue to meet contrast requirements */
+    background-color: #0056b3;
     color: #ffffff;
     padding: 0.7rem 1.2rem;
     border: none;
