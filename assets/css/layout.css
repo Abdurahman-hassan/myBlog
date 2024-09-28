@@ -171,3 +171,17 @@ section {
         background-color: #555;
     }
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .index-page {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo img {
+        width: 150px;
+    }
+}
