@@ -1,0 +1,35 @@
+/* Colors */
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox Utilities */
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
